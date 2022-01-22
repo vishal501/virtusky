@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: none;
+}
+
+.navbar img{
+    height: 13vmin;
+    border-radius: 50%;
+    background: white;
+    padding: 2%;
+    cursor: pointer;
+    
+}
+.nav-links{
+    display:flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 75%;
+}
+
+.navservice,
+.navtechnology,
+.navabout,
+.navblog,
+.navprojects {
+    text-decoration: none;
+    /* background: none; */
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.navservice{
+    z-index: 1;
+}
+.navtechnology{
+    z-index: 2;
+}
+.navabout{
+    z-index: 3;
+}
+.navblog{
+    z-index: 4;
+}
+.navprojects{
+    z-index: 5;
+}
+.mobile-menu-icon {
+    display: none;
+}
+.logoind{
+    z-index: 6;
+}
+
+@media screen and (max-width: 780px){
+    
+    .navbar img{
+        height: 20vmin;
+        display: flex;
+        position: absolute;
+        top: 10px;
+        left: 25px;
+    }
+   
+    .nav-links{
+        display: none;
+    }
+
+    .nav-links-mobile{
+        position: relative;
+        display: block;
+        text-align: center;
+        list-style: none;
+        background-image: linear-gradient(to bottom right, rgb(148, 0, 0), rgb(228, 0, 0));
+        cursor: pointer;
+        border-radius: 50%;
+        left: 0;
+        top: 232px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+    }
+    
+    
+    .navservice,
+    .navtechnology,
+    .navabout,
+    .navblog,
+    .navprojects {
+        position: relative;
+        display: block;
+        margin: 50px 0;
+        line-height: 5px;
+        
+    }
+
+    .mobile-menu-icon{
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color: white;
+        background-color: rgb(156, 0, 0);
+        border: none;
+        outline: none;
+        top: 15px;
+        right: 25px;
+    }
+    
+}
